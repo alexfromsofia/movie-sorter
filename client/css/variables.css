@@ -1,5 +1,7 @@
 :root {
     --fontSize: 1rem;
+    --starColor: #fdd003;
+    --loaderColor: #A5A7A4;
     --tooltipBorderColor: #A5A7A4;
     --tooltipBorderRadius: 4px;
 }

@@ -31,7 +31,7 @@
 
 .movie-item .fa-star,
 .movie-item .fa-star-o {
-    color: #fdd003;
+    color: var(--starColor);
 }
 
 .movie-item .fa-arrow-up {
