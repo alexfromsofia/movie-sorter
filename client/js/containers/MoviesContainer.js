@@ -68,13 +68,13 @@ class MoviesContainer extends Component {
 MoviesContainer.displayName = 'MoviesContainer';
 
 MoviesContainer.propTypes = {
+    addToFavourites: PropTypes.func.isRequired,
+    consumeMovies: PropTypes.func.isRequired,
+    moveMovieDown: PropTypes.func.isRequired,
+    moveMovieUp: PropTypes.func.isRequired,
     moviesById: PropTypes.object.isRequired,
     moviesIds: PropTypes.object.isRequired,
-    consumeMovies: PropTypes.func.isRequired,
-    addToFavourites: PropTypes.func.isRequired,
     removeFromFavourites: PropTypes.func.isRequired,
-    moveMovieUp: PropTypes.func.isRequired,
-    moveMovieDown: PropTypes.func.isRequired
 };
 
 export default connect(

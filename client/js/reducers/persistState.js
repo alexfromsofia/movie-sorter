@@ -9,7 +9,7 @@ const initialState = Immutable.Map({
 export default function (state = initialState, action = {}) {
     switch (action.type) {
         case REHYDRATE:
-            state = state.set('isPersistedStateLoading', false)
+            state = state.set('isPersistedStateLoading', false);
             break;
         default:
             break;

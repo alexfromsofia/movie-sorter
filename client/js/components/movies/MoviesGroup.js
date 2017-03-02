@@ -44,12 +44,13 @@ MoviesGroup.defaultProps = {
 };
 
 MoviesGroup.propTypes = {
-    containerClassname: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    moviesIds: PropTypes.object.isRequired,
-    moviesById: PropTypes.object.isRequired,
     addToFavourites: PropTypes.func.isRequired,
-    removeFromFavourites: PropTypes.func.isRequired,
-    moveMovieUp: PropTypes.func.isRequired,
+    containerClassname: PropTypes.string.isRequired,
+    isFavourite: PropTypes.bool.isRequired,
+    label: PropTypes.string.isRequired,
     moveMovieDown: PropTypes.func.isRequired,
+    moveMovieUp: PropTypes.func.isRequired,
+    moviesById: PropTypes.object.isRequired,
+    moviesIds: PropTypes.object.isRequired,
+    removeFromFavourites: PropTypes.func.isRequired,
 };

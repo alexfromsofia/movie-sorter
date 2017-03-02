@@ -6,4 +6,4 @@ export {
     Image,
     Loader,
     NoItems
-}
+};

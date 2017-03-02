@@ -6,4 +6,4 @@ export {
     MoviesGroup,
     MoviesItem,
     MovieTooltip
-}
+};

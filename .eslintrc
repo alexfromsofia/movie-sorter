@@ -3,10 +3,20 @@
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "spread": true
     }
   },
   "rules": {
-    "semi": 2
-  }
+    "semi": 2,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prefer-es6-class": "error",
+    "react/prop-types": "error",
+    "react/sort-prop-types": "error"
+  },
+  "plugins": [
+    "react"
+  ]
 }

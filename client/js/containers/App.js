@@ -5,7 +5,7 @@ import { Loader } from '../components';
 import { MoviesContainer } from './';
 
 class App extends Component {
-    // TODO: 1. ESLINT!!!! 2. write tests 3. add transitions
+    // TODO: 1. write tests 2. add transitions
     render() {
         const { isPersistedStateLoading } = this.props;
         return (

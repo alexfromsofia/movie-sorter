@@ -54,22 +54,22 @@ export default class MoviesItem extends Component {
         const { addToFavourites, removeFromFavourites } = this.props;
 
         if (isFavourite) {
-            removeFromFavourites({ id })
+            removeFromFavourites({ id });
         } else {
-            addToFavourites({ id })
+            addToFavourites({ id });
         }
     }
 
     onArrowUpClick() {
         const { id, moveMovieUp } = this.props;
 
-        moveMovieUp({ id })
+        moveMovieUp({ id });
     }
 
     onArrowDownClick() {
         const { id, moveMovieDown } = this.props;
 
-        moveMovieDown({ id })
+        moveMovieDown({ id });
     }
 
     renderArrowUp() {
@@ -80,7 +80,7 @@ export default class MoviesItem extends Component {
                 aria-hidden="true"
                 onClick={this.onArrowUpClick}
             />
-        )
+        );
     }
 
     renderArrowDown() {
@@ -90,18 +90,18 @@ export default class MoviesItem extends Component {
                 aria-hidden="true"
                 onClick={this.onArrowDownClick}
             />
-        )
+        );
     }
 
     renderArrows() {
         const { isFirst, isLast } = this.props;
 
         if (isFirst) {
-            return this.renderArrowDown()
+            return this.renderArrowDown();
         }
 
         if (isLast) {
-            return this.renderArrowUp()
+            return this.renderArrowUp();
         }
 
         if (!isFirst && !isLast) {
@@ -110,7 +110,7 @@ export default class MoviesItem extends Component {
                     { this.renderArrowUp() }
                     { this.renderArrowDown() }
                 </div>
-            )
+            );
         }
     }
 
@@ -166,15 +166,16 @@ MoviesItem.defaultProps = {
 };
 
 MoviesItem.propTypes = {
+    addToFavourites: PropTypes.func.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     isFavourite: PropTypes.bool.isRequired,
     isFirst: PropTypes.bool.isRequired,
     isLast: PropTypes.bool.isRequired,
-    description: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    addToFavourites: PropTypes.func.isRequired,
-    removeFromFavourites: PropTypes.func.isRequired,
-    moveMovieUp: PropTypes.func.isRequired,
     moveMovieDown: PropTypes.func.isRequired,
+    moveMovieUp: PropTypes.func.isRequired,
+    name: PropTypes.string.isRequired,
+    removeFromFavourites: PropTypes.func.isRequired,
+    shouldRenderArrows: PropTypes.bool.isRequired,
+    year: PropTypes.number.isRequired,
 };
