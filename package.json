@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack && node server/server.js",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -36,10 +36,12 @@
     "babel-preset-stage-2": "^6.22.0",
     "css-loader": "^0.26.1",
     "cssnext-loader": "^1.0.1",
+    "enzyme": "^2.7.1",
     "eslint": "^3.14.1",
     "eslint-plugin-react": "^6.10.0",
     "file-loader": "^0.10.0",
     "jest": "^19.0.2",
+    "react-addons-test-utils": "^15.4.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.1",

@@ -5,7 +5,6 @@ import { Loader } from '../components';
 import { MoviesContainer } from './';
 
 class App extends Component {
-    // TODO: 1. write tests 2. add transitions
     render() {
         const { isPersistedStateLoading } = this.props;
         return (

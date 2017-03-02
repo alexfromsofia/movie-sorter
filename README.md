@@ -26,6 +26,13 @@
 2. Webpack;
 3. Express;
 
+### Testing with jest
+```sh
+//Run tests
+$ npm install -g jest
+$ npm run jest or jest
+```
+
 ### Installation
 Optional: install yarn: https://yarnpkg.com/
 Run this in your favourite terminal:

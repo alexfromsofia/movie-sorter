@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { NoItems } from '../';
 import { MoviesItem } from './';
+import { noop } from '../../utils/utils';
 
 export default class MoviesGroup extends Component {
     render() {
@@ -13,7 +14,7 @@ export default class MoviesGroup extends Component {
                     { label }
                 </div>
                 {
-                    moviesIds.size > 0 ?
+                    moviesIds && moviesIds.size > 0 ?
                         moviesIds.map((item, index) =>
                             <MoviesItem
                                 key={item}
@@ -41,6 +42,11 @@ export default class MoviesGroup extends Component {
 MoviesGroup.defaultProps = {
     containerClassname: '',
     label: '',
+    isFavourite: false,
+    addToFavourites: noop,
+    removeFromFavourites: noop,
+    moveMovieUp: noop,
+    moveMovieDown: noop
 };
 
 MoviesGroup.propTypes = {
