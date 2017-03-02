@@ -1,0 +1,66 @@
+.movie-item {
+    position: relative;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.movie-items-label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.movie-item .movie-item-title {
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.movie-items-group {
+    margin-top: 20px;
+}
+
+.movie-items-group .no-items {
+    padding: 5px 10px;
+    color: darkgray;
+}
+
+.movie-item .fa {
+    cursor: pointer;
+}
+
+.movie-item .fa-star,
+.movie-item .fa-star-o {
+    color: #fdd003;
+}
+
+.movie-item .fa-arrow-up {
+    color: greenyellow;
+    margin-right: 5px;
+}
+
+.movie-item .fa-arrow-down {
+    color: crimson;
+}
+
+.movie-item-tooltip {
+    position: absolute;
+    width: 182px;
+    top: 0;
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--tooltipBorderColor);
+    border-radius: var(--tooltipBorderRadius);
+    background: #FFFFFF;
+    padding: 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+.movie-item-tooltip .movie-item-name {
+    font-weight: bold;
+    padding: 10px 0;
+}
