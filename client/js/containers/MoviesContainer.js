@@ -10,13 +10,15 @@ import {
     moveMovieUp,
     moveMovieDown
 } from '../actions/movies';
+import { movies } from '../constants/movies';
+import { sortAlphabetically } from '../utils/utils';
 
 class MoviesContainer extends Component {
     componentWillMount() {
         const { moviesIds, consumeMovies } = this.props;
         // in a real life app fetch from server via redux thunk or redux-saga
         if (!moviesIds.size) {
-            consumeMovies();
+            consumeMovies({ movies });
         }
     }
 
@@ -27,7 +29,7 @@ class MoviesContainer extends Component {
             .filter(item => moviesById.getIn([ item, 'isFavourite' ]));
         const allOtherMovies = moviesIds
             .filter(item => !moviesById.getIn([ item, 'isFavourite' ]))
-            .sort((a, b) => a === b ? 0 : a < b ? -1 : 1); //sort alphabetically
+            .sort(sortAlphabetically);
         const commonProps = {
             addToFavourites,
             removeFromFavourites,

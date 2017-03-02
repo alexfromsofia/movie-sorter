@@ -80,7 +80,7 @@ export default class MoviesItem extends Component {
                 aria-hidden="true"
                 onClick={this.onArrowUpClick}
             />
-        );
+        )
     }
 
     renderArrowDown() {

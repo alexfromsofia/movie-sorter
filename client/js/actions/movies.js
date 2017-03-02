@@ -1,5 +1,4 @@
 import {
-    movies,
     ADD_TO_FAVOURITES,
     REMOVE_FROM_FAVOURITES,
     CONSUME_MOVIES,
@@ -7,7 +6,7 @@ import {
     MOVE_MOVIE_DOWN
 } from '../constants/movies';
 
-export function consumeMovies() {
+export function consumeMovies({ movies }) {
     return {
         type: CONSUME_MOVIES,
         payload: { movies }
