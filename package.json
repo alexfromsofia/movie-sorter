@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "webpack && node server/server.js",
     "dev": "webpack-dev-server",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint client"
   },
   "repository": {
     "type": "git",

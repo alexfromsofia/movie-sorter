@@ -1,4 +1,4 @@
-import { REHYDRATE } from 'redux-persist/constants'
+import { REHYDRATE } from 'redux-persist/constants';
 
 import Immutable from 'immutable';
 

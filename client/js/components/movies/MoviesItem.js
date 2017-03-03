@@ -20,11 +20,11 @@ export default class MoviesItem extends Component {
     }
 
     componentDidMount () {
-        document.addEventListener('click', this.onDocumentClick)
+        document.addEventListener('click', this.onDocumentClick);
     }
 
     componentWillUnmount () {
-        document.removeEventListener('click', this.onDocumentClick)
+        document.removeEventListener('click', this.onDocumentClick);
     }
 
     onDocumentClick(event) {
@@ -80,7 +80,7 @@ export default class MoviesItem extends Component {
                 aria-hidden="true"
                 onClick={this.onArrowUpClick}
             />
-        )
+        );
     }
 
     renderArrowDown() {

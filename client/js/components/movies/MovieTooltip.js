@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Image } from '../'
+import { Image } from '../';
 
 export default class MovieTooltip extends Component {
     render() {
@@ -30,5 +30,5 @@ MovieTooltip.propTypes = {
     description: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
+    year: PropTypes.number.isRequired
 };

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-export default ({ itemName }) => (
+const NoItems = ({ itemName }) => (
     <div className="no-items">
         { `No ${itemName}` }
     </div>
 );
+
+NoItems.propTypes = {
+    itemName: PropTypes.string.isRequired
+};
+
+export default NoItems;
