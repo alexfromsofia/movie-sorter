@@ -22,7 +22,7 @@
 
 .movie-items-group .no-items {
     padding: 5px 10px;
-    color: darkgray;
+    color: var(--colorDarkGrey);
 }
 
 .movie-item .fa {
@@ -35,17 +35,17 @@
 }
 
 .movie-item .fa-arrow-up {
-    color: greenyellow;
+    color: var(--colorGreenYellow);
     margin-right: 5px;
 }
 
 .movie-item .fa-arrow-down {
-    color: crimson;
+    color: var(--colorCrimson);
 }
 
 .movie-item-tooltip {
     position: absolute;
-    width: 182px;
+    width: var(--tooltipWidth);
     top: 0;
     right: -40px;
     display: flex;
@@ -54,7 +54,7 @@
     align-items: center;
     border: 1px solid var(--tooltipBorderColor);
     border-radius: var(--tooltipBorderRadius);
-    background: #FFFFFF;
+    background: var(--tooltipBackgroundColor);
     padding: 10px;
     z-index: 10;
     text-align: center;

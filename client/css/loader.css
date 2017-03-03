@@ -1,7 +1,7 @@
 .loader {
     margin: 100px auto;
-    width: 50px;
-    height: 40px;
+    width: var(--loaderWidth);
+    height: var(--loaderHeight);
     text-align: center;
     font-size: 10px;
 }
