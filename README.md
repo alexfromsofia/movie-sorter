@@ -45,12 +45,10 @@ $ open http://localhost:3210
 
 ### Testing with jest
 ```sh
-//Run tests
 $ npm run jest or jest
 ```
 
 ### Linting
 ```sh
-//Run tests
 $ npm run lint
 ```
