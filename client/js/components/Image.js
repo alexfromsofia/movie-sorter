@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { noop } from '../utils/utils';
 
 export default class Icon extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class Icon extends Component {
 
 Icon.defaultProps = {
     imageId: '',
-    onClick: () => {}
+    onClick: noop
 };
 
 Icon.propTypes = {

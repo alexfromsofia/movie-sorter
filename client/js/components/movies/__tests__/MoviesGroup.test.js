@@ -64,7 +64,7 @@ describe('<MoviesGroup />', () => {
         expect(expected).toEqual(received);
     });
 
-    it('should render a span with correct className', () => {
+    it('should render a div with correct className', () => {
         const newProps = {
             ...defaultProps,
             containerClassname: 'test'
@@ -93,7 +93,7 @@ describe('<MoviesGroup />', () => {
     it('it should render <MoviesItem />', () => {
         const moviesIds = mockedState.get('moviesIds');
         const moviesById = mockedState.get('moviesById');
-        const wrapper = shallow(
+        shallow(
             <MoviesGroup
                 moviesIds={moviesIds}
                 moviesById={moviesById}

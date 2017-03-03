@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import { MovieTooltip } from './';
+import { noop } from '../../utils/utils';
 
 export default class MoviesItem extends Component {
     constructor() {
@@ -158,11 +159,18 @@ export default class MoviesItem extends Component {
 }
 
 MoviesItem.defaultProps = {
+    addToFavourites: noop,
     description: '',
     id: '',
     isFavourite: false,
+    isFirst: false,
+    isLast: false,
+    moveMovieDown: noop,
+    moveMovieUp: noop,
     name: '',
-    year: ''
+    removeFromFavourites: noop,
+    shouldRenderArrows: false,
+    year: 0,
 };
 
 MoviesItem.propTypes = {
