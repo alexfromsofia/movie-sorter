@@ -2,16 +2,13 @@
 
 ### Task
 
-Направете HTML интерфейс за показване на лист от филми, със следната функционалност:
-
-  - Филмите се разделят на две категории: **всички** и **любими**.
-  - Когато филм **стане любим**, той се добавя **най-отдолу** в списъка с любими и се **премахва** от списъка с всички.
-  - Когато филм бъде **махнат от любими**, той се добавя в списъка с всички, така че филмите там да останат подредени по **азбучен ред**.
-  - Списъкът с любими филми трябва да **може да се пренарежда**.
-  - При клик върху загавие на филм трябва да се показва **допълнителна информация**, а при още един клик - тя да се скрива.
-  - Списъците трябва да запазват вида си при **презареждане на страницата**, с изключение на допълнителната информация, която трябва да бъде скрита след презареждането.
-  - Опитайте да реализирате функционалността максимално **ефективно**.
-
+Create a web interface for displaying a list of movies with the given functionalities:
+  - They should be displayed in two categories: **All** and **Favourites**
+  - **All** list is sorted alphabeticaly.
+  - When a movie from **Favourites** is removed it goes to **All**.
+  - **Favourites** list should be rearangable.
+  - An info popup should appear on movie click. Clicking another time should hide the popup.
+  - The lists order should remain with the same on page reload.
 
 ### Tech stack:
 1. React;
